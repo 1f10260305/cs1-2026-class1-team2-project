@@ -33,7 +33,6 @@ body {
     justify-content: center;
 }
 
-/* 各ブロックの共通スタイル */
 .grid-item {
     width: 200px;
     height: 200px;
