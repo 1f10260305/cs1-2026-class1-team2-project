@@ -42,7 +42,7 @@ body {
     color: #333;
 }
 
-.content-1 {
+.content-1, .content-2, .content-3, .content-4 {
     border: 1px solid #333;
 }
 
