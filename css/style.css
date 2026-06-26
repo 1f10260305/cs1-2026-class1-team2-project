@@ -45,3 +45,9 @@ body {
 .content-1 {
     border: 1px solid #333;
 }
+
+.content-2 {
+    font-size: 36px;          
+    font-weight: bold;       
+    color: #1e3a8a;  
+}         
