@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.video iframe {
+    width: 300px;
+    height: 200px;
+}
+
+.video p {
+    font-size: 13px;
+    margin: 0;
+}
