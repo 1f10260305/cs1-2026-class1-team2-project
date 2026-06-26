@@ -1,14 +1,113 @@
 body {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-.video iframe {
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+button {
+    width: 200px;
+}
+
+.page {
+    margin-top: 50px;
+    display: none;
+}
+
+#toppage {
+    display: block;
+}
+
+
+/*スライダーの中身の動画とか*/
+.slide iframe {
     width: 300px;
     height: 200px;
 }
 
-.video p {
+.slide p {
     font-size: 13px;
     margin: 0;
+}
+
+
+/*スライダー周り*/
+.slider .slick-slide {
+    width: 20em;
+    height: 15em;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .slick-slide img {
+    width: auto;
+    height: auto;
+}
+.slider .slick-arrow {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 0;
+    position: absolute;
+    top: 180px;
+    z-index: 1;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+}
+.slider .slick-arrow::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #09000d;
+    border-width: 3px 3px 0 0;
+    position: absolute;
+    top: 24px;
+    transform: rotate(45deg);
+}
+.slider .slick-next {
+    right: 0;
+}
+.slider .slick-prev {
+    left: 0;
+}
+.slider .slick-next::before {
+    left: 20px;
+}
+.slider .slick-prev::before {
+    border-width: 0 0 3px 3px;
+    right: 22px;
+}
+.dots-2 .slick-dots {
+    text-align: center;
+}
+.dots-2 .slick-dots li {
+    display: inline-block;
+}
+.dots-2 .slick-dots button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 6px;
+    font-size: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background: #bcbcbc;
+    border-radius: 50%;
+}
+.dots-2 .slick-dots .slick-active button {
+    background: #0a467d;
 }

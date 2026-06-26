@@ -3,35 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/page1.css">
+    <!--js-->
+    
+
+
     <title>HoneyWorks</title>
 </head>
 <body>
+
     <h1>HoneyWorks</h1>
 
-    <h2>HoneyWorksって何？</h2>
-    <p>
-        2011年から活動を開始したクリエイターユニットで、恋愛系の青春ものやロック系の曲を制作しており、アニメのOPなどに楽曲提供を行っている。
-    </p>
+    <button type="button" onclick="show(0)">HoneyWorksって何？</button>
+    <button type="button" onclick="show(1)">告白実行委員会</button>
+    <button type="button" onclick="show(2)">告白実行委員会~新シリーズ~</button>
+    <button type="button" onclick="show(3)">CHICO with HoneyWorks</button>
 
-    <h2>シリーズもの</h2>
+    <div class="page" id="toppage">
+        <h2>HoneyWorksって何？</h2>
+        <p>
+            2011年から活動を開始したクリエイターユニットで、恋愛系の青春ものやロック系の曲を制作しており、アニメのOPなどに楽曲提供を行っている。
+        </p>
+    </div>
 
-    <h3>告白実行委員会</h3>
+    
 
-    <p>恋愛シリーズとアイドルシリーズで分かれている</p>
+    <div class="page">
+        <h2>告白実行委員会</h2>
+        <p>恋愛シリーズとアイドルシリーズで分かれている</p>
+    </div>
 
-    <h3>告白実行委員会~新シリーズ~</h3>
+
+    <div class="page">
+        <h2>告白実行委員会~新シリーズ~</h2>
     
     <p>現在進行中シリーズで、告白実行委員会の子供達のストーリー</p>
 
-    <!--今、恋が始まれ-->
-    <div class="video">
-        <iframe src="https://www.youtube.com/embed/xQcGY251rbw?si=2rzvdXh6Jvbw2I4l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p>今、恋が始まれ</p>
+    <div class="slider">
+        <!--今、恋が始まれ-->
+        <div class="slide">
+            <iframe src="https://www.youtube.com/embed/xQcGY251rbw?si=2rzvdXh6Jvbw2I4l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>今、恋が始まれ</p>
+        </div>
+        <!--ムカつく-->
+        <div class="slide">
+            <iframe src="https://www.youtube.com/embed/5bAknWIXS3M?si=_ThXTNfQGmIgIWlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>ムカつく</p>
+        </div>
+        <!--初恋は負け確！-->
+        <div class="slide">
+            <iframe src="https://www.youtube.com/embed/iEp69AqI7S4?si=iDjBdT_chsUljFJ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>初恋は負け確！</p>
+        </div>
+    </div>
     </div>
 
-    <h2>CHICO with HoneyWorks</h2>
-    <p>ボーカリストCHICOを起用したユニット</p>
+    
 
+    <div class="page">
+        <h2>CHICO with HoneyWorks</h2>
+        <p>ボーカリストCHICOを起用したユニット</p>
+
+        <div class="slider">
+            <!--決戦スピリット-->
+            <div class="slide">
+                <iframe src="https://www.youtube.com/embed/ErqUUYWfOBo?si=j18by3zLP1fAL5WA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>決戦スピリット</p>
+            </div>
+            <!--世界は恋に落ちている-->
+            <div class="slide">
+                <iframe src="https://www.youtube.com/embed/o3a_Bwn6EF0?si=LvAFsnVBhDvUtCn1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>世界は恋に落ちている</p>
+            </div>
+            <!--プライド革命-->
+            <div class="slide">
+                <iframe src="https://www.youtube.com/embed/vxP11ZvIt_A?si=cNLEIo4GyF1kylu_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>プライド革命</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/page1.js"></script>
 </body>
 </html>
